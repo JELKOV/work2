@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>미디어 쿼리 실습</title>
+<style type="text/css">
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f0f0f0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+}
+
+header, footer {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.gnb {
+	display: flex;
+	justify-content: center;
+	background-color: #444;
+}
+
+.gnb a {
+	color: white;
+	text-decoration: none;
+	padding: 15px;
+	display: block;
+}
+
+.gnb a:hover {
+	background-color: #555;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+main section, main aside {
+	flex: 1;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+main section {
+	background-color: #e7e7e7;
+}
+
+main aside {
+	background-color: #d7d7d7;
+}
+
+footer {
+	margin-top: 20px;
+}
+
+@media ( max-width : 600px) {
+	.gnb {
+		flex-direction: column;
+	}
+	.gnb a {
+		padding: 10px;
+		text-align: center;
+	}
+	main {
+		flex-direction: column;
+	}
+	main section, main aside {
+		width: 100%;
+	}
+	header, footer {
+		padding: 15px 0;
+	}
+}
+
+/* 중간 화면을 위한 스타일 */
+@media ( min-width : 601px) and (max-width: 1024px) {
+	.gnb a {
+		padding: 10px 20px;
+	}
+	header, footer {
+		padding: 15px 0;
+	}
+}
+
+/* 큰 화면을 위한 스타일 */
+@media ( min-width : 1025px) {
+	.gnb a {
+		padding: 15px 30px;
+	}
+	main section, main aside {
+		padding: 30px;
+	}
+	header, footer {
+		padding: 20px 0;
+	}
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>미디어 쿼리</h1>
+		</header>
+		<nav class="gnb">
+			<a href="#">Home</a> <a href="#">About</a> <a href="#">Services</a> <a
+				href="#">Contact</a>
+		</nav>
+		<main>
+			<section>
+				<h2>Welcome</h2>
+				<p>This is a simple responsive design example using media
+					queries.</p>
+			</section>
+			<aside>
+				<h2>Side Content</h2>
+				<p>Additional content goes here.</p>
+			</aside>
+		</main>
+		<footer>
+			<p>&copy; 2024 Responsive Design Example</p>
+		</footer>
+	</div>
+</body>
+</html>
