@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>메뉴</title>
+<style type="text/css">
+   body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+   }
+   ul.gnb {
+      padding: 0;
+      margin: 20px;
+      list-style-type: none;
+      text-align: center;
+   }
+   li {
+      list-style-type: none;
+      display: inline-block;
+      margin: 0 10px;
+   }
+   a {
+      display: inline-block;
+      text-decoration: none;
+      background: brown;
+      color: white;
+      width: 120px;
+      text-align: center;
+      height: 45px;
+      line-height: 45px;
+      transition: background 0.3s ease, color 0.3s ease;
+   }
+   a:hover {
+      background: lightblue;
+      color: black;
+      animation: hoverEffect 0.5s forwards;
+   }
+   @keyframes hoverEffect {
+      0% {
+         transform: scale(1) rotate(0deg);
+         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+      }
+      50% {
+         transform: scale(1.1) rotate(5deg);
+         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      100% {
+         transform: scale(1.1) rotate(0deg);
+         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+   }
+</style>
+</head>
+<body>
+
+<ul class="gnb">
+   <li><a href="#">베스트 상품</a></li>
+   <li><a href="#">신상품</a></li>
+   <li><a href="#">마이페이지</a></li>
+   <li><a href="#">고객센터</a></li>
+</ul>
+
+</body>
+</html>

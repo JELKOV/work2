@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>웹 개발에서 가장 자주 사용하는 요소들+속성들</title>
+</head>
+<body>
+
+<!-- HTML 자체를 V가 상대적으로 많이 다루게 됨 -->
+<!-- CONSOLE 역활: UI/UX, 유효성검사 -->
+
+<form action="form 내부에 사용자가 입력한 값들을 전달할 페이지 주소"><!-- 사용자가 여기다가 무엇을 입력하는 부분  -->
+ID: <input type="text" requaired placeholder="아이디를 입력해주세요"> <br> <!-- input은 블록요소가 아니라서 띄어쓰기 해줘야한다. -->
+PASSWORD: <input required type="password" > <br> <!-- required 강력하진 않지만 유효성검사를 할수 있다 -->
+수량: <input type="number" max="3" min="1" value="1" readonly> <br> <!-- readonly를 통해 값을 고정할수 있다. -->
+이메일: <input type="email" value="coding_helper@naver.com" disabled> <br> <!-- disabled 건드릴수도 없다. -->
+파일 업로드: <input type="file"> <br>
+<input type="submit" value="값 전달">
+
+<input type="date"> <br>
+<input type="range"> <br>
+
+</form>
+
+</body>
+</html>
