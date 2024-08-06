@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" version="5.0">
+  <servlet>
+    <description></description>
+    <display-name>Test01</display-name>
+    <servlet-name>Test01</servlet-name>
+    <servlet-class>test01.Test01</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Test01</servlet-name>
+    <url-pattern>/Test01</url-pattern>
+  </servlet-mapping>
+  <display-name>day026</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Calc01</display-name>
+    <servlet-name>Calc01</servlet-name>
+    <servlet-class>test01.Calc01</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Calc01</servlet-name>
+    <url-pattern>/Calc01</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Test02</display-name>
+    <servlet-name>Test02</servlet-name>
+    <servlet-class>test02.Test02</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Test02</servlet-name>
+    <url-pattern>/Test02</url-pattern>
+  </servlet-mapping>
+</web-app>
