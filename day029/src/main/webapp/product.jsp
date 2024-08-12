@@ -77,7 +77,7 @@
         <p><strong>상품명:</strong> <%= Selectproduct.getName() %></p>
         <p><strong>가격:</strong> <%= Selectproduct.getPrice() %> 원</p>
         <p><strong>상품설명:</strong> <%= Selectproduct.getDetails() %></p>
-        <p><strong>판매자:</strong> <%= Selectproduct.getSeller() %></p>
+        <p><strong>판매자:</strong> <%= Selectproduct.getSellerName() %></p>
         <p><strong>재고:</strong> <%= Selectproduct.getCnt() %> 
         <%
         if (existingCntInCart > 0) {

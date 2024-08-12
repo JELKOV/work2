@@ -1,14 +1,20 @@
 package product;
 
 public class ProductDTO {
-	
 	  private int num;
 	  private String name;
 	  private String details;
 	  private int price;
 	  private int cnt;
 	  private String seller;
+	  private String sellerName; // join시 나오는 FK 값
 	  private String condition;
+	public String getSellerName() {
+		return sellerName;
+	}
+	public void setSellerName(String sellerName) {
+		this.sellerName = sellerName;
+	}
 	public int getNum() {
 		return num;
 	}

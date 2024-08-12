@@ -189,6 +189,7 @@ import="product.ProductDTO, java.util.ArrayList, member.MemberDTO"  %>
             %>
                     <a href="productController.jsp?action=PRODUCT&num=<%=data.getNum()%>" class="product-item">
                         <div class="product-name"><%=data.getName()%></div>
+                        <div class="product-seller"><%=data.getSellerName()%></div>
                         <div class="product-stock">
                             <%
                             if (data.getCnt() <= 0) {
